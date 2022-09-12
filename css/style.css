@@ -30,7 +30,8 @@ html {
     border-radius: 15%;
     font-weight: 400;
     font-family: Helvetica, sans-serif;
-    
+    width: 100%;
+
 }
 
 
@@ -71,6 +72,16 @@ html {
     padding: 0.4rem 02rem;
     font-size: .75em;
     margin-left: 4rem;
+}
+
+button{
+    border: none;
+}
+
+.button{
+    position: relative;
+    flex: 1;
+    margin: 1em;
 }
 
 .data{
@@ -119,12 +130,12 @@ html {
     margin:0 0 .62em .7em;
 }
 
-@media (max-width:1024px ){
+@media (max-width:1030px ){
     .heading {
-        font-size: 1rem;
+        font-size: .7rem;
     }
     .text{
-        font-size: 3rem;
+        font-size: 2rem;
         width: 50%;
     }
     .input{
@@ -141,12 +152,16 @@ html {
     img{
         width: 80%;
     }
+    .button .btn{
+        margin: 0em 0.9em;
+        padding: 0.15em 1.35em;;
+    }
 }
 
-@media (max-width:768px) {
+@media (max-width:800px) {
     .text{
         position: relative;
-        top: 10%;
+        top: 0%;
         font-size: 2rem;
         height: 100%;
     }
@@ -166,10 +181,23 @@ html {
     .buttons .btn{
         margin: 0px;
     }
+    .button .btn{
+        margin-left: 1rem  ;
+        padding: 0.15em 0.95em;
+    }
 
+    .submit{
+        position: relative;
+        left: 10rem;
+        bottom: 2.26rem;
+    }
+
+    .form-data{
+        margin-top: 3rem;
+    }
 }
 
-@media (max-width:425px){
+@media (max-width:650px){
     #page-2 .container,#page-3 .container,#page-4 .container{
         position: relative;
         top: 8rem;
@@ -207,8 +235,28 @@ html {
         top: 4rem;
         left: 2rem;
     }
+    .button .btn{
+        margin: 03em  ;
+        padding: 0.35em 1.55em;
+
+    }
+
+    .prev{
+        position: relative;
+        top:6rem;
+        left: 1.5rem;
+    }
+    .submit{
+        position: relative;
+        top: 4.75rem;
+        left: 10rem;
+    }
+
+    .data{
+        margin: 2rem 2rem 2rem 2rem;
+    }
 }
-@media (max-width:375px){
+@media (max-width:390px){
     #page-2 .container,#page-3 .container,#page-4 .container{
         position: relative;
         top: 8rem;
@@ -244,6 +292,11 @@ html {
         margin-left: 4rem;
         position: relative;
         top: 4rem;
-        left: 1.75rem;
+        left: 0.25rem;
     }
+    .button{
+        position: relative;
+        left: -1rem;
+    }
+    
 }

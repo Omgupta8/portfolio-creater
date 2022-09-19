@@ -1,8 +1,9 @@
 *{
-    background-color: #F5F5F5;
+    background-color: #000000;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 html {
@@ -23,7 +24,7 @@ html {
     display: inline;
     text-decoration: none;
     color: black;
-    background: #ECEBFD;
+    background: #A9DDDD;
     margin: 1em 1.75em;
     padding: .35em 1.35em;
     font-size: 1.75rem;
@@ -42,10 +43,42 @@ html {
     align-items:flex-end;
     justify-content: flex-end;
     padding: 2rem 1rem ;
-    margin-top: 4em;
-    background: url("/portfolio_creater/images/Vector\ 3.png") no-repeat;
+/*     margin-top: 4em; */
     background-size:contain;
     background-position: bottom right;
+}
+
+.vector1{
+    position: fixed;
+    right: -10%; 
+    /* height: 47%; */
+    /* width: 27%; */
+    /* position: relative; */
+    top: 5%;
+    
+    z-index: 1;
+}
+
+
+.vector2{
+    position: fixed;
+    right: -24%;
+    /* background: url('/images/Vector\ 7.jpg'); */
+    /* background-color: #000000; */
+    top: -30%;
+    /* height: 47%; */
+    /* width: 27%; */
+    z-index: 2;
+    opacity: 0.6;
+}
+
+
+.vector3{
+    position: fixed;
+    /* right: 4%;  */
+    /* height: 47%; */
+    /* width: 27%;  */
+    /* z-index: 2; */
 }
 
 .picture img{

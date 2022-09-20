@@ -70,8 +70,8 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
-    top: 15vh;
-    right: 25%;
+    top: 8vh;
+    right: 15%;
     height: 47%;
     width: 27%;
     z-index: 2;
@@ -86,7 +86,7 @@ html {
     background-size: contain;
     position: fixed;
     top: 67vh;
-    right: 47%;
+    right: 30%;
     height: 24%;
     width: 14%;
     z-index: 2;

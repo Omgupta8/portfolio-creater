@@ -10,7 +10,11 @@ html {
     scroll-behavior: smooth;
     overflow: hidden;
   }
+
+
 /* utility classes */
+
+
 .container{
     /* max-width: 2000px; */
     min-width: 220px;
@@ -32,53 +36,61 @@ html {
     font-weight: 400;
     font-family: Helvetica, sans-serif;
     width: 100%;
-
 }
-
 
 
 .picture{
     flex: 1;
-    display:flex;
-    align-items:flex-end;
-    justify-content: flex-end;
-    padding: 2rem 1rem ;
-/*     margin-top: 4em; */
+    /* display:flex;  */
+    /* align-items:flex-end; */
+    /* justify-content: flex-end; */
+    /* padding: 2rem 1rem ; */
+     /* margin-top: 4em; */
     background-size:contain;
     background-position: bottom right;
 }
 
+
 .vector1{
+    background-image: url('/images/Vector\ 7.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
     position: fixed;
-    right: -10%; 
-    /* height: 47%; */
-    /* width: 27%; */
-    /* position: relative; */
-    top: 5%;
-    
-    z-index: 1;
+    top: 33vh;
+    right: 4%;
+    height: 47%;
+    width: 27%;
+    z-index: 3;
+    background-color: transparent;
 }
 
 
 .vector2{
+    background-image: url('/images/Vector\ 8.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
     position: fixed;
-    right: -24%;
-    /* background: url('/images/Vector\ 7.jpg'); */
-    /* background-color: #000000; */
-    top: -30%;
-    /* height: 47%; */
-    /* width: 27%; */
+    top: 15vh;
+    right: 25%;
+    height: 47%;
+    width: 27%;
     z-index: 2;
-    opacity: 0.6;
+
+    background-color: transparent;
 }
 
 
 .vector3{
+    background-image: url('/images/Vector\ 9.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
     position: fixed;
-    /* right: 4%;  */
-    /* height: 47%; */
-    /* width: 27%;  */
-    /* z-index: 2; */
+    top: 67vh;
+    right: 47%;
+    height: 24%;
+    width: 14%;
+    z-index: 2;
+    background-color: transparent;
 }
 
 .picture img{
@@ -90,14 +102,14 @@ html {
 }
 
 .text{
+    flex: 5;
     display: flex;
-    flex: 1;
     flex-direction: column;
     justify-content:space-around ;
     padding: 1rem 0 0em;
     font-size: 2.25rem;
     font-family: Helvetica, sans-serif;
-    
+    /* z-index: 3; */
 }
 
 .text .buttons .btn{
@@ -141,7 +153,6 @@ button{
     margin: 1em;
 }
 
-/* first page */
 
 
 .heading{
@@ -163,7 +174,9 @@ button{
     margin:0 0 .62em .7em;
 }
 
-@media (max-width:1030px ){
+
+
+@media (max-width:1030px){
     .heading {
         font-size: .7rem;
     }
@@ -214,6 +227,7 @@ button{
     .buttons .btn{
         margin: 0px;
     }
+
     .button .btn{
         margin-left: 1rem  ;
         padding: 0.15em 0.95em;
@@ -239,7 +253,7 @@ button{
         font-size: 2rem;
     }
     .text{
-        font-size: 1rem;
+        font-size: 1.1rem;
         width: 60% !important;
         height: 70%;
     }
@@ -268,6 +282,7 @@ button{
         top: 4rem;
         left: 2rem;
     }
+
     .button .btn{
         margin: 03em  ;
         padding: 0.35em 1.55em;
@@ -289,6 +304,17 @@ button{
         margin: 2rem 2rem 2rem 2rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:390px){
     #page-2 .container,#page-3 .container,#page-4 .container{
         position: relative;
@@ -327,6 +353,7 @@ button{
         top: 4rem;
         left: 0.25rem;
     }
+
     .button{
         position: relative;
         left: -1rem;

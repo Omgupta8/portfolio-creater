@@ -11,8 +11,67 @@ html {
     overflow: hidden;
   }
 
+  @-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes rotating-anti /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }
+  @keyframes rotating-anti {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(-360deg);
+      -moz-transform: rotate(-360deg);
+      -webkit-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }
+
 
 /* utility classes */
+
 
 
 .container{
@@ -52,7 +111,7 @@ html {
 
 
 .vector1{
-    background-image: url('./images/Vector\ 7.svg');
+    background-image: url('../images/Vector\ 7.svg');
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
@@ -64,14 +123,21 @@ html {
     background-color: transparent;
 }
 
+.vector1 {
+    -webkit-animation: rotating 10s linear infinite;
+    -moz-animation: rotating 10s linear infinite;
+    -ms-animation: rotating 10s linear infinite;
+    -o-animation: rotating 10s linear infinite;
+    animation: rotating 10s linear infinite;
+}
 
 .vector2{
-    background-image: url('./images/Vector\ 8.svg');
+    background-image: url('../images/Vector\ 8.svg');
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
     top: 8vh;
-    right: 15%;
+    right: 22%;
     height: 45%;
     width: 27%;
     z-index: 2;
@@ -79,19 +145,34 @@ html {
     background-color: transparent;
 }
 
+.vector2 {
+    -webkit-animation: rotating-anti 10s linear infinite;
+    -moz-animation: rotating-anti 10s linear infinite;
+    -ms-animation: rotating-anti 10s linear infinite;
+    -o-animation: rotating-anti 10s linear infinite;
+    animation: rotating-anti 10s linear infinite;
+  }
 
 .vector3{
-    background-image: url('./images/Vector\ 9.svg');
+    background-image: url('../images/Vector\ 9.svg');
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
     top: 67vh;
-    right: 30%;
+    right: 40%;
     height: 24%;
     width: 14%;
     z-index: 2;
     background-color: transparent;
 }
+
+.vector3 {
+    -webkit-animation: rotating 10s linear infinite;
+    -moz-animation: rotating 10s linear infinite;
+    -ms-animation: rotating 10s linear infinite;
+    -o-animation: rotating 10s linear infinite;
+    animation: rotating 10s linear infinite;
+  }
 
 .picture img{
     background-color: transparent;

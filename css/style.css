@@ -52,7 +52,7 @@ html {
 
 
 .vector1{
-    background-image: url('./images/Vector\ 7.svg');
+    background-image: url('/images/Vector\ 7.svg');
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
@@ -66,13 +66,13 @@ html {
 
 
 .vector2{
-    background-image: url('./images/Vector\ 8.svg');
+    background-image: url('/images/Vector\ 8.svg');
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
     top: 8vh;
     right: 15%;
-    height: 47%;
+    height: 45%;
     width: 27%;
     z-index: 2;
 
@@ -81,7 +81,7 @@ html {
 
 
 .vector3{
-    background-image: url('./images/Vector\ 9.svg');
+    background-image: url('/images/Vector\ 9.svg');
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
@@ -102,7 +102,7 @@ html {
 }
 
 .text{
-    flex: 5;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content:space-around ;
@@ -117,10 +117,12 @@ html {
     padding: 0.4rem 02rem;
     font-size: .75em;
     margin-left: 4rem;
+    text-align: center;
 }
 
 button{
     border: none;
+    text-align: center;
 }
 
 .button{
@@ -176,7 +178,7 @@ button{
 
 
 
-@media (max-width:1030px){
+@media (max-width:1091px){
     .heading {
         font-size: .7rem;
     }
@@ -199,15 +201,16 @@ button{
         width: 80%;
     }
     .button .btn{
-        margin: 0em 0.9em;
+        margin: 0em 01.26em;
         padding: 0.15em 1.35em;;
     }
 }
 
 @media (max-width:800px) {
     .text{
+        flex: 2;
         position: relative;
-        top: 0%;
+        top: -06%;
         font-size: 2rem;
         height: 100%;
     }
@@ -226,23 +229,46 @@ button{
     }
     .buttons .btn{
         margin: 0px;
+        z-index: 10;
+        margin-top: 2rem;
     }
 
     .button .btn{
         margin-left: 1rem  ;
-        padding: 0.15em 0.95em;
+        padding: 0.15em 1.9em;
+        z-index: 10;
+    }
+
+    .prev{
+        
+        position: relative;
+        left: 1.5rem;
     }
 
     .submit{
         position: relative;
-        left: 10rem;
+        left: 15.2rem;
         bottom: 2.26rem;
     }
 
     .form-data{
         margin-top: 3rem;
     }
+    #page-5{
+        z-index: 4;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:650px){
     #page-2 .container,#page-3 .container,#page-4 .container{
@@ -253,6 +279,7 @@ button{
         font-size: 2rem;
     }
     .text{
+        flex: 3;
         font-size: 1.1rem;
         width: 60% !important;
         height: 70%;

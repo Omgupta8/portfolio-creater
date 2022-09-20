@@ -52,6 +52,7 @@ html {
       transform: rotate(-360deg);
     }
   }
+
   @keyframes rotating-anti {
     from {
       -ms-transform: rotate(0deg);
@@ -218,6 +219,7 @@ button{
     font-weight: 600;
     margin: 50px 70px 30px;
 
+    z-index: 100;
 }
 
 .data input{
@@ -357,16 +359,17 @@ button{
         top: 8rem;
     }
     .heading h1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .text{
         flex: 3;
-        font-size: 1.1rem;
-        width: 60% !important;
+        font-size: 1.4rem;
+        width: 70% !important;
         height: 70%;
     }
     .data input{
-        font-size: .3rem;
+        font-size: .6rem;
+
     }
     .btn{
         font-size: 1rem;
@@ -391,8 +394,12 @@ button{
         left: 2rem;
     }
 
+    .button{
+        position: relative;
+        top: 4rem;
+    }
     .button .btn{
-        margin: 03em  ;
+        margin: 0 3em  ;
         padding: 0.35em 1.55em;
 
     }
@@ -404,8 +411,13 @@ button{
     }
     .submit{
         position: relative;
-        top: 4.75rem;
+        top: 4.45rem;
         left: 10rem;
+    }
+
+    #page-5 .text,#page-6 .text{
+        position: relative;
+        top: 3rem;
     }
 
     .data{
@@ -437,7 +449,7 @@ button{
         height: 65%;
     }
     .data input{
-        font-size: .3rem;
+        font-size: .6rem;
     }
     .btn{
         font-size: 1rem;
@@ -465,6 +477,10 @@ button{
     .button{
         position: relative;
         left: -1rem;
+    }
+
+    .submit{
+        top: 4.8rem;
     }
     
 }

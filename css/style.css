@@ -52,7 +52,7 @@ html {
 
 
 .vector1{
-    background-image: url('/images/Vector\ 7.svg');
+    background-image: url('./images/Vector\ 7.svg');
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
@@ -66,7 +66,7 @@ html {
 
 
 .vector2{
-    background-image: url('/images/Vector\ 8.svg');
+    background-image: url('./images/Vector\ 8.svg');
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
@@ -81,7 +81,7 @@ html {
 
 
 .vector3{
-    background-image: url('/images/Vector\ 9.svg');
+    background-image: url('./images/Vector\ 9.svg');
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;

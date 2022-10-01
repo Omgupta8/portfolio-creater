@@ -31,8 +31,8 @@
     <div id="bio" class="section"></div>
     <section class="bio container">
         <div class="profile-subsection w-60">
-            <h1 class="heading-bio">Hey There!</h1>
-            <p class="bio-about open-sans">I am based in New Delhi. I’m a front-end web developer with over a decade of experience. I work with agencies across the globe to create high performance & rich interactive websites that work across all platforms & devices.</p>
+            <h1 class="heading-bio" id="heading-bio">Hey There!</h1>
+            <p class="bio-about open-sans" id="bio-about"></p>
             <div class="scroll-down">
                 <img src="./images/scroll.png" alt="scroll down">
                 <p class="open-sans">Scroll Down</p>
@@ -40,9 +40,9 @@
         </div>
         <div class="profile-subsection w-30 text-center">
             <div class="profile-img-container"><div><img class="profile-image" src="./images/profile.jpg" alt="profile-photo"></div></div>
-            <h1 class="name">Leslie Cooper</h1>
+            <h1 class="name" id="name">Leslie Cooper</h1>
             <hr class="name-separator">
-            <h1 class="role">WEB DEVELOPER</h1>
+            <h1 class="role" id="domain">WEB DEVELOPER</h1>
         </div>
     </section>
 
@@ -50,16 +50,8 @@
     <section class="container skills">
         <div class="skill-list">
             <h1 class="heading-skills">I am well versed with: </h1>
-            <div class="w-100 wrapping">
-                <div class="skill-item-container">
-                    <div class="serial-number-container"><span class="serial-number">01</span></div>
-                    <div class="skill-item">This is a skill</div>
-                </div>
-                <div class="skill-item-container">
-                    <div class="serial-number-container"><span class="serial-number">02</span></div>
-                    <div class="skill-item">This is a skill</div>
-                </div>
-        
+            <div class="w-100 wrapping" id="skill-items">
+                
             </div>
             
         </div>
@@ -69,18 +61,8 @@
     <section class="projects container">
         <div class="projects-container">
             <h1 class="heading-projects">Featured Projects:</h1>
-            <div class="project-list">
-                <div class="serial-number-container"><span class="serial-number">01</span></div>
-                <div class="project-item">
-                    <div class="project-desc w-60">
-                        <h1 class="project-name">Name Of Project 1</h1>
-                        <div class="project-desc-text">Startergy direct mailing crowdfunding product  management, Social media steath. Startergy direct mailing crowdfunding product  management, Social media steath.</div>
-                        <a href="" class="project-link">Project link <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                    <div class="w-10"></div>
-                    <div class="project-image w-30"><img src="./images/profile.jpg">
-                    </div>
-                </div>
+            <div class="project-list" id="project-list">
+                
             </div>
         </div>
     </section>
@@ -107,5 +89,8 @@
 
    
 </script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+<script src="./firebase.js"></script>
+<script src="./portfolio.js"></script>
 </body>
 </html>

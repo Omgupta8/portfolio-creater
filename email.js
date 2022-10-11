@@ -112,7 +112,7 @@ function validateprojectone()
 	let c=0;
     var myprojectone = $("#project3").val();
 
-        if (regexp.test(myprojectone)||myprojectone=='')
+        if (regexp.test(myprojectone) || myprojectone=='')
         {
         }
         else
@@ -144,3 +144,12 @@ $(document).ready(function(){
     	validateprojectone();
   	});
 });
+
+// function red(){
+// 	if(){
+
+// 	}
+// 	else{
+// 		alert("Submit the details");
+// 	}
+// }

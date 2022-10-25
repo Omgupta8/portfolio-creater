@@ -212,7 +212,10 @@ button{
     flex: 1;
     margin: 1em;
 }
-
+#submiit{
+    width: 25%;
+    text-align: center;
+}
 .data{
     display: flex;
     flex-direction: column;
@@ -287,6 +290,10 @@ button{
         margin: 0em 01.26em;
         padding: 0.15em 1.35em;;
     }
+    #submiit{
+        width: 35%;
+        text-align: center;
+    }
 }
 
 @media (max-width:800px) {
@@ -339,6 +346,11 @@ button{
     }
     #page-5{
         z-index: 4;
+    }
+    
+    #submiit{
+        width: 44%;
+        text-align: center;
     }
 }
 

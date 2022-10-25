@@ -37,11 +37,11 @@
 
           <div class="data">
             <label for="name">What is your name?</label>
-            <input id="name" type="text" name="name" placeholder="Type your answer here" />
+            <input id="name" type="text" placeholder="Type your answer here" required/>
           </div>
           <div class="data">
             <label for="email">Provide your Email:</label>
-            <input type="text" name="email" id="email" placeholder="Type your answer here" />
+            <input type="email" id="email" placeholder="Type your answer here" required/>
           </div>
           <div class="data">
             <label for="url">Provide your LinkedIn Link:</label>
@@ -49,7 +49,8 @@
           </div>
           <div class="buttons">
             <a href="#page-1" class="btn" type="">Prev</a>
-            <a  href="#page-3" type="button" class="btn">Next</a>
+            <a type="button" class="btn" onclick="blue()">Next</a>
+            <!-- <a  href="#page-3" type="button" class="btn" onclick="blue()">Next</a> -->
           </div>
         </div>
         <div class="picture">
@@ -74,7 +75,8 @@
           </div>
           <div class="buttons">
             <a href="#page-2" class="btn">Prev</a>
-            <a href="#page-4" id="gitlink" class="btn">Next</a>
+            <a  id="gitlink" onclick="white()" class="btn">Next</a>
+            <!-- <a href="#page-4" id="gitlink" onclick="white()" class="btn">Next</a> -->
           </div>
         </div>
         <div class="picture">
@@ -101,7 +103,8 @@
           
           <div class="buttons">
             <a href="#page-3" class="btn">Prev</a>
-            <a href="#page-5" class="btn" id="projectlink-1">Next</a>
+            <a onclick="black()" class="btn" id="projectlink-1">Next</a>
+            <!-- <a href="#page-5" onclick="black()" class="btn" id="projectlink-1">Next</a> -->
           </div>
         </div>
         <div class="picture">
@@ -166,9 +169,10 @@
   </form>
 
   <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
-  <!-- <script src="./email.js"></script> -->
+  <!-- <script src="email.js"></script> -->
   <script src="./firebase.js"></script>
   <script src="./index.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
